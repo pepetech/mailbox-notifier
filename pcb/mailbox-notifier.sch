@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4919,9 +4919,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <junction x="281.94" y="58.42"/>
 </segment>
 <segment>
-<label x="175.26" y="132.08" size="1.778" layer="95" xref="yes"/>
-<wire x1="170.18" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="PD15"/>
+<label x="175.26" y="137.16" size="1.778" layer="95" xref="yes"/>
+<wire x1="170.18" y1="137.16" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="PD13"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -4947,20 +4947,6 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <label x="200.66" y="134.62" size="1.778" layer="95" xref="yes"/>
 <wire x1="170.18" y1="134.62" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="PD14"/>
-</segment>
-</net>
-<net name="RFM_RST" class="0">
-<segment>
-<label x="200.66" y="139.7" size="1.778" layer="95" xref="yes"/>
-<wire x1="170.18" y1="139.7" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="PD12"/>
-</segment>
-</net>
-<net name="!RFM_CS" class="0">
-<segment>
-<label x="175.26" y="137.16" size="1.778" layer="95" xref="yes"/>
-<wire x1="170.18" y1="137.16" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="PD13"/>
 </segment>
 </net>
 <net name="US1_CLK" class="0">
@@ -5017,6 +5003,20 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <wire x1="170.18" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
 <label x="200.66" y="177.8" size="1.778" layer="95" xref="yes"/>
 <pinref part="U5" gate="G$1" pin="PB14"/>
+</segment>
+</net>
+<net name="RFM_RST" class="0">
+<segment>
+<label x="175.26" y="132.08" size="1.778" layer="95" xref="yes"/>
+<wire x1="170.18" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="PD15"/>
+</segment>
+</net>
+<net name="!RFM_CS" class="0">
+<segment>
+<label x="200.66" y="139.7" size="1.778" layer="95" xref="yes"/>
+<wire x1="170.18" y1="139.7" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="PD12"/>
 </segment>
 </net>
 </nets>
