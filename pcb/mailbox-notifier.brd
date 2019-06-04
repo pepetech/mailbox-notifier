@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -541,7 +541,7 @@ Jun 2019</text>
 </library>
 <library name="EFM32">
 <packages>
-<package name="QFN32">
+<package name="QFN32_0.5P">
 <smd name="33" x="0" y="0" dx="3.5" dy="3.5" layer="1" cream="no"/>
 <smd name="9" x="-1.75" y="-2.43" dx="0.26" dy="0.86" layer="1" rot="R180"/>
 <wire x1="-2.5" y1="-2.1" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
@@ -717,28 +717,30 @@ Jun 2019</text>
 </library>
 <library name="USB Connector">
 <packages>
-<package name="USB-C-16P-SMD-FLAT-SIDE">
+<package name="USB-C-16P-SMD-FLAT-SIDE-TYPE-2">
+<description>Package for eBay connector &lt;a href="https://www.ebay.com/itm/10Pcs-USB-3-1-Type-C-Female-16Pin-4-Legs-SMT-Charging-Port-PCB-Socket-Connector/173108999862?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2057872.m2749.l2649"&gt;from this seller&lt;/a&gt;&lt;br&gt;
+Package for LCSC connector C319148</description>
 <text x="-5.06" y="5.325" size="0.3048" layer="51">PCB Edge</text>
 <wire x1="-3.4" y1="4.965" x2="-2.7" y2="4.665" width="0.08" layer="51"/>
 <wire x1="-2.7" y1="4.665" x2="-2.8" y2="4.865" width="0.08" layer="51"/>
 <wire x1="-2.7" y1="4.665" x2="-2.9" y2="4.565" width="0.08" layer="51"/>
-<smd name="D+@1" x="5" y="0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B7" x="5" y="0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
 <hole x="3.68" y="2.89" drill="0.65"/>
 <hole x="3.68" y="-2.89" drill="0.65"/>
 <wire x1="-2.6" y1="5.207" x2="-2.6" y2="4.32" width="0" layer="51"/>
 <text x="-1.778" y="5.588" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.778" y="-6.858" size="1.27" layer="27">&gt;VALUE</text>
-<smd name="D-@1" x="5" y="0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="SB2" x="5" y="1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="CC1" x="5" y="1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="CC2" x="5" y="-1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="SB1" x="5" y="-1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="D-@0" x="5" y="-0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="D+@0" x="5" y="-0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="VBUS@0" x="5" y="-2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
-<smd name="GND@0" x="5" y="-3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
-<smd name="GND@1" x="5" y="3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
-<smd name="VBUS@1" x="5" y="2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="A6" x="5" y="0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A5" x="5" y="1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B8" x="5" y="1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A8" x="5" y="-1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B5" x="5" y="-1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B6" x="5" y="-0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A7" x="5" y="-0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B4/A9" x="5" y="-2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="B1/A12" x="5" y="-3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="A1/B12" x="5" y="3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="A4/B9" x="5" y="2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
 <pad name="SHIELD@1" x="4.18" y="4.32" drill="0.6" diameter="1" shape="long"/>
 <polygon width="0" layer="46">
 <vertex x="3.30128125" y="4.288040625" curve="-96.114783"/>
@@ -1644,7 +1646,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.614" y="88.9175" size="0.762" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="30.314" y="89.389" size="0.762" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="U5" library="EFM32" package="QFN32" value="EFM32PG1B200F256GM32" x="17.5" y="52.3" smashed="yes">
+<element name="U5" library="EFM32" package="QFN32_0.5P" value="EFM32PG1B200F256GM32" x="17.5" y="52.3" smashed="yes">
 <attribute name="NAME" x="20.4" y="55.1" size="0.762" layer="25" font="vector" ratio="10"/>
 </element>
 <element name="U7" library="HopeRF" package="RFM69W-XXXS2" value="RFM69HW" x="17.5" y="12" smashed="yes" rot="R180">
@@ -1673,7 +1675,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="5.914" y="79.8175" size="0.762" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="6.414" y="84.789" size="0.762" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="USB1" library="USB Connector" package="USB-C-16P-SMD-FLAT-SIDE" value="USB-C-16P-SMD-FLAT-SIDE" x="17.5" y="98.6" smashed="yes" rot="R270">
+<element name="USB1" library="USB Connector" package="USB-C-16P-SMD-FLAT-SIDE-TYPE-2" value="USB-C-16P-SMD-FLAT-SIDE-TYPE-2" x="17.5" y="98.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.122" y="96.688" size="0.762" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="10.642" y="100.378" size="0.762" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
@@ -2008,8 +2010,8 @@ design rules under a new name.</description>
 <contactref element="USB1" pad="SHIELD@2"/>
 <contactref element="USB1" pad="SHIELD@0"/>
 <contactref element="USB1" pad="SHIELD@3"/>
-<contactref element="USB1" pad="GND@1"/>
-<contactref element="USB1" pad="GND@0"/>
+<contactref element="USB1" pad="B1/A12"/>
+<contactref element="USB1" pad="A1/B12"/>
 <contactref element="R3" pad="1"/>
 <contactref element="R1" pad="1"/>
 <contactref element="C2" pad="2"/>
@@ -2633,32 +2635,32 @@ design rules under a new name.</description>
 <wire x1="4.7" y1="86.3" x2="3.8" y2="86.3" width="0.508" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="USB1" pad="CC2"/>
+<contactref element="USB1" pad="B5"/>
 <contactref element="R1" pad="2"/>
-<wire x1="10.81915" y1="96.5" x2="15.1" y2="96.5" width="0.2" layer="1"/>
-<wire x1="16.25" y1="95.35" x2="16.25" y2="93.6" width="0.2" layer="1"/>
-<wire x1="15.1" y1="96.5" x2="16.25" y2="95.35" width="0.2" layer="1"/>
+<wire x1="14.6" y1="96.5" x2="10.81915" y2="96.5" width="0.2" layer="1"/>
+<wire x1="15.75" y1="93.6" x2="15.75" y2="95.35" width="0.2" layer="1"/>
+<wire x1="15.75" y1="95.35" x2="14.6" y2="96.5" width="0.2" layer="1"/>
 </signal>
 <signal name="N$4">
-<contactref element="USB1" pad="VBUS@0"/>
-<contactref element="USB1" pad="VBUS@1"/>
+<contactref element="USB1" pad="A4/B9"/>
+<contactref element="USB1" pad="B4/A9"/>
 <contactref element="F1" pad="2"/>
 <wire x1="15.1" y1="93.6" x2="15.1" y2="92.7" width="0.6096" layer="1"/>
 <wire x1="15.1" y1="92.7" x2="15.7" y2="92.1" width="0.6096" layer="1"/>
 <wire x1="15.7" y1="92.1" x2="17" y2="92.1" width="0.6096" layer="1"/>
 <wire x1="17.7" y1="91.4" x2="17.7" y2="89.972" width="0.6096" layer="1"/>
 <wire x1="17" y1="92.1" x2="17.7" y2="91.4" width="0.6096" layer="1"/>
-<wire x1="19.9" y1="93.6" x2="19.9" y2="92.7" width="0.6096" layer="1"/>
-<wire x1="19.9" y1="92.7" x2="19.3" y2="92.1" width="0.6096" layer="1"/>
+<wire x1="19.3" y1="92.1" x2="19.9" y2="92.7" width="0.6096" layer="1"/>
 <wire x1="19.3" y1="92.1" x2="18.4" y2="92.1" width="0.6096" layer="1"/>
 <wire x1="18.4" y1="92.1" x2="17.7" y2="91.4" width="0.6096" layer="1"/>
+<wire x1="19.9" y1="92.7" x2="19.9" y2="93.6" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$5">
-<contactref element="USB1" pad="CC1"/>
+<contactref element="USB1" pad="A5"/>
 <contactref element="R3" pad="2"/>
-<wire x1="24.18085" y1="96.5" x2="20.4" y2="96.5" width="0.2" layer="1"/>
-<wire x1="19.25" y1="95.35" x2="19.25" y2="93.6" width="0.2" layer="1"/>
-<wire x1="20.4" y1="96.5" x2="19.25" y2="95.35" width="0.2" layer="1"/>
+<wire x1="19.9" y1="96.5" x2="24.18085" y2="96.5" width="0.2" layer="1"/>
+<wire x1="18.75" y1="93.6" x2="18.75" y2="95.35" width="0.2" layer="1"/>
+<wire x1="18.75" y1="95.35" x2="19.9" y2="96.5" width="0.2" layer="1"/>
 </signal>
 <signal name="EXT_TRIG">
 <contactref element="U11" pad="4"/>

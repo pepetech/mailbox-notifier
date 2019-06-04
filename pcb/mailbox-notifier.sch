@@ -1375,7 +1375,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </library>
 <library name="EFM32">
 <packages>
-<package name="QFN32">
+<package name="QFN32_0.5P">
 <smd name="33" x="0" y="0" dx="3.5" dy="3.5" layer="1" cream="no"/>
 <smd name="9" x="-1.75" y="-2.43" dx="0.26" dy="0.86" layer="1" rot="R180"/>
 <wire x1="-2.5" y1="-2.1" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
@@ -1550,7 +1550,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <gate name="G$1" symbol="EFM32XG1B200_QFN32" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN32">
+<device name="" package="QFN32_0.5P">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="8"/>
 <connect gate="G$1" pin="AVDD@0" pad="22"/>
@@ -2508,28 +2508,115 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 </library>
 <library name="USB Connector">
 <packages>
-<package name="USB-C-16P-SMD-FLAT-SIDE">
+<package name="USB-C-16P-SMD-FLAT-SIDE-TYPE-2">
+<description>Package for eBay connector &lt;a href="https://www.ebay.com/itm/10Pcs-USB-3-1-Type-C-Female-16Pin-4-Legs-SMT-Charging-Port-PCB-Socket-Connector/173108999862?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2057872.m2749.l2649"&gt;from this seller&lt;/a&gt;&lt;br&gt;
+Package for LCSC connector C319148</description>
 <text x="-5.06" y="5.325" size="0.3048" layer="51">PCB Edge</text>
 <wire x1="-3.4" y1="4.965" x2="-2.7" y2="4.665" width="0.08" layer="51"/>
 <wire x1="-2.7" y1="4.665" x2="-2.8" y2="4.865" width="0.08" layer="51"/>
 <wire x1="-2.7" y1="4.665" x2="-2.9" y2="4.565" width="0.08" layer="51"/>
-<smd name="D+@1" x="5" y="0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B7" x="5" y="0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
 <hole x="3.68" y="2.89" drill="0.65"/>
 <hole x="3.68" y="-2.89" drill="0.65"/>
 <wire x1="-2.6" y1="5.207" x2="-2.6" y2="4.32" width="0" layer="51"/>
 <text x="-1.778" y="5.588" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.778" y="-6.858" size="1.27" layer="27">&gt;VALUE</text>
-<smd name="D-@1" x="5" y="0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="SB2" x="5" y="1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="CC1" x="5" y="1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="CC2" x="5" y="-1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="SB1" x="5" y="-1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="D-@0" x="5" y="-0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="D+@0" x="5" y="-0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
-<smd name="VBUS@0" x="5" y="-2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
-<smd name="GND@0" x="5" y="-3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
-<smd name="GND@1" x="5" y="3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
-<smd name="VBUS@1" x="5" y="2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="A6" x="5" y="0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A5" x="5" y="1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B8" x="5" y="1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A8" x="5" y="-1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B5" x="5" y="-1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B6" x="5" y="-0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A7" x="5" y="-0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B4/A9" x="5" y="-2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="B1/A12" x="5" y="-3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="A1/B12" x="5" y="3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="A4/B9" x="5" y="2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<pad name="SHIELD@1" x="4.18" y="4.32" drill="0.6" diameter="1" shape="long"/>
+<polygon width="0" layer="46">
+<vertex x="3.30128125" y="4.288040625" curve="-96.114783"/>
+<vertex x="3.599575" y="4.62"/>
+<vertex x="4.73" y="4.62" curve="-90"/>
+<vertex x="5.03" y="4.32" curve="-90"/>
+<vertex x="4.73" y="4.02"/>
+<vertex x="3.599575" y="4.02" curve="-83.884624"/>
+</polygon>
+<pad name="SHIELD@2" x="4.18" y="-4.32" drill="0.6" diameter="1" shape="long"/>
+<polygon width="0" layer="46">
+<vertex x="3.30128125" y="-4.411959375" curve="-96.114783"/>
+<vertex x="3.599575" y="-4.02"/>
+<vertex x="4.73" y="-4.02" curve="-90"/>
+<vertex x="5.03" y="-4.38" curve="-90"/>
+<vertex x="4.73" y="-4.62"/>
+<vertex x="3.599575" y="-4.62" curve="-83.884624"/>
+</polygon>
+<pad name="SHIELD@3" x="0" y="-4.32" drill="0.6" diameter="1" shape="long"/>
+<polygon width="0" layer="46">
+<vertex x="0.6" y="-4.32" curve="90"/>
+<vertex x="0.3" y="-4.02"/>
+<vertex x="-0.3" y="-4.02" curve="90"/>
+<vertex x="-0.6" y="-4.32" curve="90"/>
+<vertex x="-0.3" y="-4.62"/>
+<vertex x="0.3" y="-4.62" curve="90"/>
+</polygon>
+<pad name="SHIELD@0" x="0" y="4.32" drill="0.6" diameter="1" shape="long"/>
+<polygon width="0" layer="46">
+<vertex x="0.6" y="4.28" curve="90"/>
+<vertex x="0.3" y="4.62"/>
+<vertex x="-0.3" y="4.62" curve="90"/>
+<vertex x="-0.6" y="4.28" curve="90"/>
+<vertex x="-0.3" y="4.02"/>
+<vertex x="0.3" y="4.02" curve="90"/>
+</polygon>
+<wire x1="-2.6" y1="-4.32" x2="-2.6" y2="-5.207" width="0" layer="51"/>
+<wire x1="-2.6" y1="-4.32" x2="4.99" y2="-4.32" width="0.127" layer="51"/>
+<wire x1="4.99" y1="-4.32" x2="4.99" y2="4.32" width="0.127" layer="51"/>
+<wire x1="4.99" y1="4.32" x2="-2.6" y2="4.32" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="4.32" x2="-2.6" y2="-4.32" width="0.127" layer="51"/>
+<rectangle x1="4.73" y1="3.25" x2="4.99" y2="3.45" layer="51"/>
+<rectangle x1="4.73" y1="2.95" x2="4.99" y2="3.15" layer="51"/>
+<rectangle x1="4.73" y1="2.45" x2="4.99" y2="2.65" layer="51"/>
+<rectangle x1="4.73" y1="2.15" x2="4.99" y2="2.35" layer="51"/>
+<rectangle x1="4.73" y1="1.65" x2="4.99" y2="1.85" layer="51"/>
+<rectangle x1="4.73" y1="1.15" x2="4.99" y2="1.35" layer="51"/>
+<rectangle x1="4.73" y1="0.65" x2="4.99" y2="0.85" layer="51"/>
+<rectangle x1="4.73" y1="0.15" x2="4.99" y2="0.35" layer="51"/>
+<rectangle x1="4.73" y1="-0.35" x2="4.99" y2="-0.15" layer="51"/>
+<rectangle x1="4.73" y1="-0.85" x2="4.99" y2="-0.65" layer="51"/>
+<rectangle x1="4.73" y1="-1.35" x2="4.99" y2="-1.15" layer="51"/>
+<rectangle x1="4.73" y1="-1.85" x2="4.99" y2="-1.65" layer="51"/>
+<rectangle x1="4.73" y1="-2.35" x2="4.99" y2="-2.15" layer="51"/>
+<rectangle x1="4.73" y1="-2.65" x2="4.99" y2="-2.45" layer="51"/>
+<rectangle x1="4.73" y1="-3.45" x2="4.99" y2="-3.25" layer="51"/>
+<rectangle x1="4.73" y1="-3.15" x2="4.99" y2="-2.95" layer="51"/>
+<wire x1="-2.3" y1="-4.32" x2="-1.3" y2="-4.32" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-4.32" x2="2.8" y2="-4.32" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="4.32" x2="-1.3" y2="4.32" width="0.127" layer="21"/>
+<wire x1="1.3" y1="4.32" x2="2.8" y2="4.32" width="0.127" layer="21"/>
+</package>
+<package name="USB-C-16P-SMD-FLAT-SIDE-TYPE-1">
+<description>Package for LCSC connector C167321</description>
+<text x="-5.06" y="5.325" size="0.3048" layer="51">PCB Edge</text>
+<wire x1="-3.4" y1="4.965" x2="-2.7" y2="4.665" width="0.08" layer="51"/>
+<wire x1="-2.7" y1="4.665" x2="-2.8" y2="4.865" width="0.08" layer="51"/>
+<wire x1="-2.7" y1="4.665" x2="-2.9" y2="4.565" width="0.08" layer="51"/>
+<smd name="B7" x="5" y="0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<hole x="3.68" y="2.89" drill="0.65"/>
+<hole x="3.68" y="-2.89" drill="0.65"/>
+<wire x1="-2.6" y1="5.207" x2="-2.6" y2="4.32" width="0" layer="51"/>
+<text x="-1.778" y="5.588" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.778" y="-6.858" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="A6" x="5" y="0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A5" x="5" y="1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A8" x="5" y="1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B8" x="5" y="-1.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B5" x="5" y="-1.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B6" x="5" y="-0.75" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="A7" x="5" y="-0.25" dx="0.3" dy="1.25" layer="1" rot="R90"/>
+<smd name="B4/A9" x="5" y="-2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="B1/A12" x="5" y="-3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="A1/B12" x="5" y="3.2" dx="0.6" dy="1.25" layer="1" rot="R90"/>
+<smd name="A4/B9" x="5" y="2.4" dx="0.6" dy="1.25" layer="1" rot="R90"/>
 <pad name="SHIELD@1" x="4.18" y="4.32" drill="0.6" diameter="1" shape="long"/>
 <polygon width="0" layer="46">
 <vertex x="3.30128125" y="4.288040625" curve="-96.114783"/>
@@ -2621,20 +2708,39 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <gate name="G$1" symbol="USB-C-16P-4-SHIELD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="USB-C-16P-SMD-FLAT-SIDE">
+<device name="-TYPE-1" package="USB-C-16P-SMD-FLAT-SIDE-TYPE-1">
 <connects>
-<connect gate="G$1" pin="CC1" pad="CC1"/>
-<connect gate="G$1" pin="CC2" pad="CC2"/>
-<connect gate="G$1" pin="D+" pad="D+@0 D+@1"/>
-<connect gate="G$1" pin="D-" pad="D-@0 D-@1"/>
-<connect gate="G$1" pin="GND" pad="GND@0 GND@1"/>
-<connect gate="G$1" pin="SB1" pad="SB1"/>
-<connect gate="G$1" pin="SB2" pad="SB2"/>
+<connect gate="G$1" pin="CC1" pad="A5"/>
+<connect gate="G$1" pin="CC2" pad="B5"/>
+<connect gate="G$1" pin="D+" pad="A6 B6"/>
+<connect gate="G$1" pin="D-" pad="A7 B7"/>
+<connect gate="G$1" pin="GND" pad="A1/B12 B1/A12"/>
+<connect gate="G$1" pin="SB1" pad="A8"/>
+<connect gate="G$1" pin="SB2" pad="B8"/>
 <connect gate="G$1" pin="SHIELD@0" pad="SHIELD@0"/>
 <connect gate="G$1" pin="SHIELD@1" pad="SHIELD@1"/>
 <connect gate="G$1" pin="SHIELD@2" pad="SHIELD@2"/>
 <connect gate="G$1" pin="SHIELD@3" pad="SHIELD@3"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS@0 VBUS@1"/>
+<connect gate="G$1" pin="VBUS" pad="A4/B9 B4/A9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TYPE-2" package="USB-C-16P-SMD-FLAT-SIDE-TYPE-2">
+<connects>
+<connect gate="G$1" pin="CC1" pad="A5"/>
+<connect gate="G$1" pin="CC2" pad="B5"/>
+<connect gate="G$1" pin="D+" pad="A6 B6"/>
+<connect gate="G$1" pin="D-" pad="A7 B7"/>
+<connect gate="G$1" pin="GND" pad="A1/B12 B1/A12"/>
+<connect gate="G$1" pin="SB1" pad="A8"/>
+<connect gate="G$1" pin="SB2" pad="B8"/>
+<connect gate="G$1" pin="SHIELD@0" pad="SHIELD@0"/>
+<connect gate="G$1" pin="SHIELD@1" pad="SHIELD@1"/>
+<connect gate="G$1" pin="SHIELD@2" pad="SHIELD@2"/>
+<connect gate="G$1" pin="SHIELD@3" pad="SHIELD@3"/>
+<connect gate="G$1" pin="VBUS" pad="A4/B9 B4/A9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8559,7 +8665,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <part name="C11" library="Capacitor" deviceset="CAPACITOR" device="-0603" value="100nF"/>
 <part name="VBAT5" library="Supply Symbol" deviceset="VBAT" device=""/>
 <part name="U4" library="Fortune" deviceset="FS8205" device=""/>
-<part name="USB1" library="USB Connector" deviceset="USB-C-16P-SMD-FLAT-SIDE" device=""/>
+<part name="USB1" library="USB Connector" deviceset="USB-C-16P-SMD-FLAT-SIDE" device="-TYPE-2"/>
 <part name="C2" library="Capacitor" deviceset="CAPACITOR" device="-1206" value="100uF"/>
 <part name="R1" library="Resistor" deviceset="RESISTOR" device="-0603" value="5.1K Ohms"/>
 <part name="R3" library="Resistor" deviceset="RESISTOR" device="-0603" value="5.1K Ohms"/>
