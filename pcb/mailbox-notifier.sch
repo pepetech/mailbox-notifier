@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -205,14 +205,14 @@
 <wire x1="335.78" y1="9.144" x2="335.78" y2="14.224" width="0.1016" layer="94"/>
 <wire x1="289.56" y1="23.114" x2="289.56" y2="24.384" width="0.6096" layer="94"/>
 <wire x1="289.56" y1="24.384" x2="290.83" y2="24.384" width="0.6096" layer="94"/>
-<text x="292.1" y="15.494" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
-<text x="292.1" y="10.414" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
-<text x="306.07" y="5.334" size="2.54" layer="94" font="vector">&gt;SHEET</text>
-<text x="292.1" y="5.334" size="2.54" layer="94" font="vector">Sheet:</text>
-<text x="292.1" y="20.574" size="2.54" layer="94" font="vector">&gt;CNAME</text>
-<text x="336.65" y="5.334" size="2.54" layer="94" font="vector">Rev:</text>
-<text x="336.75" y="10.414" size="2.54" layer="94" font="vector">&gt;DESIGNER</text>
-<text x="345.41" y="5.234" size="2.54" layer="94" font="vector">&gt;CREVISION</text>
+<text x="292.1" y="15.494" locked="yes" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="292.1" y="10.414" locked="yes" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="306.07" y="5.334" locked="yes" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="292.1" y="5.334" locked="yes" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="292.1" y="20.574" locked="yes" size="2.54" layer="94" font="vector">&gt;CNAME</text>
+<text x="336.65" y="5.334" locked="yes" size="2.54" layer="94" font="vector">Rev:</text>
+<text x="336.75" y="10.414" locked="yes" size="2.54" layer="94" font="vector">&gt;DESIGNER</text>
+<text x="345.41" y="5.234" locked="yes" size="2.54" layer="94" font="vector">&gt;CREVISION</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1846,7 +1846,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <text x="-2.667" y="3.429" size="1.27" layer="21" font="vector" ratio="12">IC</text>
 <text x="-9.398" y="-8.128" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
-<package name="RFM69W-XXXS2">
+<package name="RFM69XW-XXXS2">
 <description>&lt;h3&gt;Hope RF RFM69HW RF Transceiver&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-9.85" y1="8" x2="9.85" y2="8" width="0.127" layer="51"/>
@@ -1901,9 +1901,61 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <wire x1="9.977" y1="8.127" x2="9.977" y2="7.875" width="0.127" layer="21"/>
 <text x="-11.938" y="-8.128" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
+<package name="RFM69CW-XXXS2">
+<description>&lt;h3&gt;Hope RF RFM69HCW RF Transciever&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.orcam.eu/res/Datablad/rfm69hcwv11.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="1" x="-7.5" y="6" dx="3" dy="1.2" layer="1"/>
+<wire x1="-8.127" y1="8.127" x2="8.127" y2="8.127" width="0.127" layer="21"/>
+<wire x1="8.127" y1="-8.127" x2="-8.127" y2="-8.127" width="0.127" layer="21"/>
+<wire x1="0" y1="2" x2="0" y2="-2" width="0.2032" layer="21"/>
+<wire x1="0" y1="-2" x2="4" y2="-2" width="0.2032" layer="21"/>
+<wire x1="4" y1="-2" x2="4" y2="2" width="0.2032" layer="21"/>
+<wire x1="4" y1="2" x2="0" y2="2" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-2" x2="-4" y2="0" width="0.2032" layer="51"/>
+<wire x1="-2" y1="0" x2="-4" y2="0" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-2" x2="-2" y2="0" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-2" x2="-4" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-8" x2="8" y2="-8" width="0.127" layer="51"/>
+<wire x1="8" y1="-8" x2="8" y2="8" width="0.127" layer="51"/>
+<wire x1="8" y1="8" x2="-8" y2="8" width="0.127" layer="51"/>
+<wire x1="-8" y1="8" x2="-8" y2="-8" width="0.127" layer="51"/>
+<circle x="-9.089" y="8.392" radius="0.254" width="0" layer="21"/>
+<wire x1="-8.127" y1="-8.127" x2="-8.127" y2="-6.859" width="0.127" layer="21"/>
+<wire x1="8.127" y1="-6.859" x2="8.127" y2="-8.127" width="0.127" layer="21"/>
+<wire x1="-8.127" y1="4.826" x2="-8.127" y2="5.1562" width="0.127" layer="21"/>
+<wire x1="8.127" y1="8.127" x2="8.127" y2="6.859" width="0.127" layer="21"/>
+<wire x1="-8.127" y1="6.859" x2="-8.127" y2="8.127" width="0.127" layer="21"/>
+<wire x1="-8.127" y1="2.826" x2="-8.127" y2="3.1562" width="0.127" layer="21"/>
+<wire x1="-8.127" y1="0.826" x2="-8.127" y2="1.1562" width="0.127" layer="21"/>
+<wire x1="-8.127" y1="-1.174" x2="-8.127" y2="-0.8438" width="0.127" layer="21"/>
+<wire x1="-8.127" y1="-3.174" x2="-8.127" y2="-2.8438" width="0.127" layer="21"/>
+<wire x1="-8.127" y1="-5.174" x2="-8.127" y2="-4.8438" width="0.127" layer="21"/>
+<wire x1="8.127" y1="-4.826" x2="8.127" y2="-5.1562" width="0.127" layer="21"/>
+<wire x1="8.127" y1="-2.826" x2="8.127" y2="-3.1562" width="0.127" layer="21"/>
+<wire x1="8.127" y1="-0.826" x2="8.127" y2="-1.1562" width="0.127" layer="21"/>
+<wire x1="8.127" y1="1.174" x2="8.127" y2="0.8438" width="0.127" layer="21"/>
+<wire x1="8.127" y1="3.174" x2="8.127" y2="2.8438" width="0.127" layer="21"/>
+<wire x1="8.127" y1="5.174" x2="8.127" y2="4.8438" width="0.127" layer="21"/>
+<text x="1.333" y="-0.571" size="1.27" layer="21" font="vector" ratio="12">IC</text>
+<text x="-9.398" y="-8.128" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<smd name="2" x="-7.5" y="4" dx="3" dy="1.2" layer="1"/>
+<smd name="3" x="-7.5" y="2" dx="3" dy="1.2" layer="1"/>
+<smd name="4" x="-7.5" y="0" dx="3" dy="1.2" layer="1"/>
+<smd name="5" x="-7.5" y="-2" dx="3" dy="1.2" layer="1"/>
+<smd name="6" x="-7.5" y="-4" dx="3" dy="1.2" layer="1"/>
+<smd name="7" x="-7.5" y="-6" dx="3" dy="1.2" layer="1"/>
+<smd name="8" x="7.5" y="-6" dx="3" dy="1.2" layer="1" rot="R180"/>
+<smd name="9" x="7.5" y="-4" dx="3" dy="1.2" layer="1" rot="R180"/>
+<smd name="10" x="7.5" y="-2" dx="3" dy="1.2" layer="1" rot="R180"/>
+<smd name="11" x="7.5" y="0" dx="3" dy="1.2" layer="1" rot="R180"/>
+<smd name="12" x="7.5" y="2" dx="3" dy="1.2" layer="1" rot="R180"/>
+<smd name="13" x="7.5" y="4" dx="3" dy="1.2" layer="1" rot="R180"/>
+<smd name="14" x="7.5" y="6" dx="3" dy="1.2" layer="1" rot="R180"/>
+<smd name="NC" x="-7.62" y="7.62" dx="0" dy="0" layer="1" stop="no" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
-<symbol name="RFM69H">
+<symbol name="RFM69">
 <pin name="RST" x="-25.4" y="-5.08" length="middle" direction="in"/>
 <pin name="IO0" x="5.08" y="-10.16" length="middle" rot="R180"/>
 <pin name="IO1" x="5.08" y="-12.7" length="middle" rot="R180"/>
@@ -1927,12 +1979,12 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RFM69H" prefix="U">
+<deviceset name="RFM69*" prefix="U">
 <gates>
-<gate name="U1" symbol="RFM69H" x="0" y="0"/>
+<gate name="U1" symbol="RFM69" x="0" y="0"/>
 </gates>
 <devices>
-<device name="CW" package="RFM69HCW-XXXS2">
+<device name="HCW" package="RFM69HCW-XXXS2">
 <connects>
 <connect gate="U1" pin="!CS" pad="5"/>
 <connect gate="U1" pin="ANT" pad="9"/>
@@ -1953,7 +2005,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <technology name=""/>
 </technologies>
 </device>
-<device name="W" package="RFM69W-XXXS2">
+<device name="W" package="RFM69XW-XXXS2">
 <connects>
 <connect gate="U1" pin="!CS" pad="15"/>
 <connect gate="U1" pin="ANT" pad="10"/>
@@ -1969,6 +2021,28 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="U1" pin="RST" pad="1"/>
 <connect gate="U1" pin="SCK" pad="12"/>
 <connect gate="U1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="H"/>
+</technologies>
+</device>
+<device name="CW" package="RFM69CW-XXXS2">
+<connects>
+<connect gate="U1" pin="!CS" pad="7"/>
+<connect gate="U1" pin="ANT" pad="1"/>
+<connect gate="U1" pin="GND" pad="3 14"/>
+<connect gate="U1" pin="IO0" pad="9"/>
+<connect gate="U1" pin="IO1" pad="11"/>
+<connect gate="U1" pin="IO2" pad="10"/>
+<connect gate="U1" pin="IO3" pad="4"/>
+<connect gate="U1" pin="IO4" pad="NC"/>
+<connect gate="U1" pin="IO5" pad="12"/>
+<connect gate="U1" pin="MISO" pad="8"/>
+<connect gate="U1" pin="MOSI" pad="5"/>
+<connect gate="U1" pin="RST" pad="13"/>
+<connect gate="U1" pin="SCK" pad="6"/>
+<connect gate="U1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2083,6 +2157,34 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <smd name="GND@1" x="0" y="2.5" dx="1" dy="5" layer="1" rot="R90" cream="no"/>
 <pad name="FEED" x="0" y="0.5" drill="0.3" diameter="1.5" stop="no" thermals="no"/>
 </package>
+<package name="BNC">
+<pad name="SIGNAL" x="0" y="0" drill="0.9" diameter="1.778"/>
+<pad name="GND" x="-2.45" y="0" drill="0.9" diameter="1.778"/>
+<pad name="SHIELD@0" x="4.9" y="4.9" drill="2" diameter="3.5"/>
+<pad name="SHIELD@1" x="-4.9" y="4.9" drill="2" diameter="3.5"/>
+<wire x1="-7.25" y1="12.45" x2="-6.35" y2="12.45" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="12.45" x2="6.35" y2="12.45" width="0.127" layer="21"/>
+<wire x1="6.35" y1="12.45" x2="7.25" y2="12.45" width="0.127" layer="21"/>
+<wire x1="7.25" y1="12.45" x2="7.25" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="7.25" y1="-1.35" x2="-7.25" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-1.35" x2="-7.25" y2="12.45" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="12.45" x2="-6.35" y2="21.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="21.35" x2="-4.85" y2="21.35" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="21.35" x2="4.85" y2="21.35" width="0.127" layer="21"/>
+<wire x1="4.85" y1="21.35" x2="6.35" y2="21.35" width="0.127" layer="21"/>
+<wire x1="6.35" y1="21.35" x2="6.35" y2="12.45" width="0.127" layer="21"/>
+<wire x1="-6.3" y1="19.1" x2="6.3" y2="20.4" width="0.127" layer="21"/>
+<wire x1="-6.3" y1="18.1" x2="6.3" y2="19.4" width="0.127" layer="21"/>
+<wire x1="-6.3" y1="17.1" x2="6.3" y2="18.4" width="0.127" layer="21"/>
+<wire x1="-6.3" y1="16.1" x2="6.3" y2="17.4" width="0.127" layer="21"/>
+<wire x1="-6.3" y1="15.1" x2="6.3" y2="16.4" width="0.127" layer="21"/>
+<wire x1="-6.3" y1="14.1" x2="6.3" y2="15.4" width="0.127" layer="21"/>
+<wire x1="-6.3" y1="13.1" x2="6.3" y2="14.4" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="21.35" x2="-4.85" y2="33.35" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="33.35" x2="4.85" y2="33.35" width="0.127" layer="21"/>
+<wire x1="4.85" y1="33.35" x2="4.85" y2="21.35" width="0.127" layer="21"/>
+<text x="-7.112" y="-2.921" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RFCON">
@@ -2131,6 +2233,15 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <connects>
 <connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2"/>
 <connect gate="G$1" pin="SIGNAL" pad="FEED SIGNAL"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BNC" package="BNC">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2824,6 +2935,23 @@ Package for LCSC connector C319148</description>
 <wire x1="-1" y1="0.4" x2="-1" y2="-0.4" width="0.127" layer="51" curve="-180"/>
 <wire x1="1" y1="-0.4" x2="1" y2="0.4" width="0.127" layer="51" curve="-180"/>
 </package>
+<package name="2920">
+<wire x1="-5.4115" y1="3.1955" x2="5.4115" y2="3.1955" width="0.127" layer="21"/>
+<wire x1="5.4115" y1="3.1955" x2="5.4115" y2="-3.1955" width="0.127" layer="21"/>
+<wire x1="5.4115" y1="-3.1955" x2="-5.4115" y2="-3.1955" width="0.127" layer="21"/>
+<wire x1="-5.4115" y1="-3.1955" x2="-5.4115" y2="3.1955" width="0.127" layer="21"/>
+<smd name="1" x="-3.35" y="0" dx="3.3" dy="5.7" layer="1"/>
+<smd name="2" x="3.35" y="0" dx="3.3" dy="5.7" layer="1"/>
+<text x="-5.34" y="3.64" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-3.99" y1="2.72" x2="3.99" y2="2.72" width="0.127" layer="51"/>
+<wire x1="3.99" y1="2.72" x2="3.99" y2="1.99" width="0.127" layer="51"/>
+<wire x1="3.99" y1="-1.99" x2="3.99" y2="-2.72" width="0.127" layer="51"/>
+<wire x1="3.99" y1="-2.72" x2="-3.99" y2="-2.72" width="0.127" layer="51"/>
+<wire x1="3.99" y1="-1.99" x2="3.99" y2="1.99" width="0.127" layer="51" curve="-180"/>
+<wire x1="-3.99" y1="1.99" x2="-3.99" y2="-1.99" width="0.127" layer="51" curve="-180"/>
+<wire x1="-3.99" y1="-2.72" x2="-3.99" y2="-1.99" width="0.127" layer="51"/>
+<wire x1="-3.99" y1="1.99" x2="-3.99" y2="2.72" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PTC">
@@ -2891,6 +3019,15 @@ Package for LCSC connector C319148</description>
 </technologies>
 </device>
 <device name="0805" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2920" package="2920">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3326,32 +3463,6 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <text x="-5.08" y="1.905" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 <text x="3.81" y="1.905" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 </package>
-<package name="PH-03-SIDE">
-<description>&lt;h3&gt;JST 3 Pin Right Angle SMT&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
-&lt;li&gt;Pin pitch:2mm&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-4.99" y1="-2.07" x2="-4.99" y2="-5.57" width="0.2032" layer="21"/>
-<wire x1="-4.99" y1="-5.57" x2="-4.19" y2="-5.57" width="0.2032" layer="21"/>
-<wire x1="-4.19" y1="-5.57" x2="-4.19" y2="-3.07" width="0.2032" layer="21"/>
-<wire x1="-4.19" y1="-3.07" x2="-2.99" y2="-3.07" width="0.2032" layer="21"/>
-<wire x1="3.01" y1="-3.07" x2="4.21" y2="-3.07" width="0.2032" layer="21"/>
-<wire x1="4.21" y1="-3.07" x2="4.21" y2="-5.57" width="0.2032" layer="21"/>
-<wire x1="4.21" y1="-5.57" x2="5.01" y2="-5.57" width="0.2032" layer="21"/>
-<wire x1="5.01" y1="-5.57" x2="5.01" y2="-2.07" width="0.2032" layer="21"/>
-<wire x1="3.01" y1="1.93" x2="-2.99" y2="1.93" width="0.2032" layer="21"/>
-<smd name="3" x="-1.99" y="-4.77" dx="1" dy="4.6" layer="1"/>
-<smd name="1" x="2.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
-<smd name="NC1" x="-4.39" y="0.43" dx="3.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="NC2" x="4.41" y="0.43" dx="3.4" dy="1.6" layer="1" rot="R90"/>
-<smd name="2" x="0.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
-<text x="-1.397" y="0.635" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.651" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
 <package name="PH-03-TOP">
 <wire x1="-5.1" y1="2.97" x2="5.2" y2="2.97" width="0.2032" layer="51"/>
 <wire x1="5.2" y1="2.97" x2="5.2" y2="-2.13" width="0.2032" layer="51"/>
@@ -3371,6 +3482,24 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <text x="-3.81" y="-6.35" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.84" y="3.48" size="1.27" layer="27">&gt;Value</text>
 <smd name="2" x="0" y="-2" dx="1" dy="5.5" layer="1"/>
+</package>
+<package name="PH-03-SIDE">
+<wire x1="-4.99" y1="-2.07" x2="-4.99" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="-4.99" y1="-5.57" x2="-4.19" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="-4.19" y1="-5.57" x2="-4.19" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="-4.19" y1="-3.07" x2="-2.99" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="3.01" y1="-3.07" x2="4.21" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="4.21" y1="-3.07" x2="4.21" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="4.21" y1="-5.57" x2="5.01" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="5.01" y1="-5.57" x2="5.01" y2="-2.07" width="0.2032" layer="21"/>
+<wire x1="3.01" y1="1.93" x2="-2.99" y2="1.93" width="0.2032" layer="21"/>
+<smd name="3" x="-1.99" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<smd name="1" x="2.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-4.39" y="0.43" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="4.41" y="0.43" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="0.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<text x="-1.397" y="0.635" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -3412,9 +3541,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <connect gate="-3" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="OC_FARNELL" value="1679128" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="-PH-SIDE" package="PH-03-SIDE">
@@ -3463,7 +3590,6 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 </packages>
 <symbols>
 <symbol name="PWR">
-<description>OP-AMP power pins</description>
 <pin name="VCC" x="0" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 <text x="-0.127" y="3.683" size="1.27" layer="95" align="center">VCC</text>
@@ -3618,10 +3744,10 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <devices>
 <device name="" package="4-SMD-3225">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="GND@0" pad="2"/>
-<connect gate="G$1" pin="GND@1" pad="4"/>
+<connect gate="G$1" pin="1" pad="2"/>
+<connect gate="G$1" pin="2" pad="4"/>
+<connect gate="G$1" pin="GND@0" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8633,7 +8759,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <part name="C14" library="Capacitor" deviceset="CAPACITOR" device="-0603" value="100nF"/>
 <part name="2V88" library="Supply Symbol" deviceset="2V8" device=""/>
 <part name="GND26" library="Supply Symbol" deviceset="GND" device=""/>
-<part name="U7" library="HopeRF" deviceset="RFM69H" device="W" value="RFM69HW"/>
+<part name="U7" library="HopeRF" deviceset="RFM69*" device="W" technology="H" value="RFM69HW"/>
 <part name="GND38" library="Supply Symbol" deviceset="GND" device=""/>
 <part name="C18" library="Capacitor" deviceset="CAPACITOR" device="-0603" value="100nF"/>
 <part name="GND36" library="Supply Symbol" deviceset="GND" device=""/>
