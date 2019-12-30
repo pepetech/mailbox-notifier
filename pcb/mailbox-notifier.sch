@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -181,6 +181,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="BR-LS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -651,17 +653,17 @@
 </packages>
 <symbols>
 <symbol name="SCHOTTKY">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
@@ -900,14 +902,15 @@
 <symbol name="CAP">
 <pin name="C2" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="C1" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<wire x1="3.4798" y1="-1.905" x2="3.4798" y2="0" width="0.2032" layer="94"/>
-<wire x1="3.4798" y1="0" x2="3.4798" y2="1.905" width="0.2032" layer="94"/>
-<wire x1="4.1148" y1="-1.905" x2="4.1148" y2="0" width="0.2032" layer="94"/>
-<wire x1="4.1148" y1="0" x2="4.1148" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="3.4798" y1="-1.905" x2="3.4798" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.4798" y1="0" x2="3.4798" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="4.1148" y1="-1.905" x2="4.1148" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.1148" y1="0" x2="4.1148" y2="1.905" width="0.1524" layer="94"/>
 <wire x1="4.1148" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="3.4798" y2="0" width="0.1524" layer="94"/>
-<text x="-0.5842" y="-4.2672" size="1.778" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<text x="-0.9144" y="2.7686" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0" y="-2.7686" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left">&gt;VALUE</text>
+<text x="0" y="2.7686" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0" y="-5.3086" size="1.778" layer="97" ratio="10" rot="SR0" align="top-left">&gt;VOLTAGE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -922,7 +925,9 @@
 <connect gate="G$1" pin="C2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0805" package="CAP0805">
@@ -931,7 +936,9 @@
 <connect gate="G$1" pin="C2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-1206" package="CAP1206">
@@ -940,7 +947,9 @@
 <connect gate="G$1" pin="C2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0402" package="CAP0402">
@@ -949,7 +958,9 @@
 <connect gate="G$1" pin="C2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1073,15 +1084,16 @@
 <symbol name="RES">
 <pin name="2" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="1" x="12.7" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="-1.27" width="0.2032" layer="94"/>
-<wire x1="4.445" y1="-1.27" x2="5.715" y2="1.27" width="0.2032" layer="94"/>
-<wire x1="5.715" y1="1.27" x2="6.985" y2="-1.27" width="0.2032" layer="94"/>
-<wire x1="6.985" y1="-1.27" x2="8.255" y2="1.27" width="0.2032" layer="94"/>
-<wire x1="8.255" y1="1.27" x2="9.525" y2="-1.27" width="0.2032" layer="94"/>
-<wire x1="2.54" y1="0" x2="3.175" y2="1.27" width="0.2032" layer="94"/>
-<wire x1="9.525" y1="-1.27" x2="10.16" y2="0" width="0.2032" layer="94"/>
-<text x="0.6858" y="-3.6576" size="1.778" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<text x="0.9906" y="2.7686" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="-1.27" x2="5.715" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="6.985" y1="-1.27" x2="8.255" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="8.255" y1="1.27" x2="9.525" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.175" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="9.525" y1="-1.27" x2="10.16" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="-2.7686" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left">&gt;VALUE</text>
+<text x="0" y="2.7686" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0" y="-5.3086" size="1.778" layer="97" ratio="10" rot="SR0" align="top-left">&gt;TOLERANCE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1096,7 +1108,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0805" package="RES0805">
@@ -1105,7 +1119,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-1206" package="RES1206">
@@ -1114,7 +1130,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-2512" package="RES2512">
@@ -1123,7 +1141,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0402" package="RES0402">
@@ -1132,7 +1152,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1196,25 +1218,25 @@
 </packages>
 <symbols>
 <symbol name="SWITCH_MOMENTARY">
-<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
-<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.1524" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
 <wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
 <wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.1524" layer="94"/>
 <circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
 <circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
 <text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
-<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="2"/>
+<pin name="3" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="2"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1434,8 +1456,6 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-162.56" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-162.56" x2="0" y2="-162.56" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-162.56" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PB11" x="5.08" y="-30.48" length="middle" rot="R180"/>
 <pin name="PB12" x="5.08" y="-33.02" length="middle" rot="R180"/>
 <pin name="PB13" x="5.08" y="-35.56" length="middle" rot="R180"/>
@@ -1542,6 +1562,8 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <pin name="HFXTAL_N" x="5.08" y="-137.16" length="middle" rot="R180"/>
 <pin name="HFXTAL_P" x="5.08" y="-134.62" length="middle" rot="R180"/>
 <pin name="AVDD@1" x="-38.1" y="-142.24" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1715,14 +1737,71 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <wire x1="-1" y1="0.3" x2="-1" y2="-0.3" width="0.127" layer="21"/>
 <wire x1="1" y1="0.3" x2="1" y2="-0.3" width="0.127" layer="21"/>
 </package>
+<package name="IND0606">
+<smd name="1" x="-2.75" y="0" dx="5.7" dy="2.7" layer="1" rot="R90"/>
+<smd name="2" x="2.75" y="0" dx="5.7" dy="2.7" layer="1" rot="R90"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="51"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<text x="-5.08" y="5.08" size="1.778" layer="25">&gt;NAME</text>
+<wire x1="-1" y1="3" x2="1" y2="3" width="0.127" layer="21"/>
+<wire x1="-1" y1="-3" x2="1" y2="-3" width="0.127" layer="21"/>
+</package>
+<package name="IND0505">
+<smd name="1" x="-1.95" y="0" dx="4.9" dy="2.6" layer="1" rot="R90"/>
+<smd name="2" x="1.95" y="0" dx="4.9" dy="2.6" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<text x="-5.08" y="3.58" size="1.778" layer="25">&gt;NAME</text>
+<wire x1="-0.5" y1="2.5" x2="0.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-2.5" x2="0.5" y2="-2.5" width="0.127" layer="21"/>
+</package>
+<package name="IND3225">
+<smd name="1" x="0" y="-1.275" dx="2" dy="1.25" layer="1"/>
+<text x="-1.55" y="-1.58" size="0.4064" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-1.25" y1="1.6" x2="1.25" y2="1.6" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1.6" x2="1.25" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.6" x2="-1.25" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1.6" x2="-1.25" y2="1.6" width="0.127" layer="51"/>
+<smd name="2" x="0" y="1.275" dx="2" dy="1.25" layer="1"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.25" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.6" x2="-1.25" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="1.6" x2="-1.1" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="1.6" x2="1.25" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1.6" x2="1.25" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.6" x2="1.1" y2="-1.6" width="0.127" layer="21"/>
+</package>
+<package name="IND1365">
+<smd name="1" x="-6.375" y="0" dx="4" dy="5.5" layer="1"/>
+<smd name="2" x="6.375" y="0" dx="4" dy="5.5" layer="1"/>
+<text x="-5.08" y="7.35" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-3.9" y1="6.35" x2="3.9" y2="6.35" width="0.127" layer="51"/>
+<wire x1="3.9" y1="6.35" x2="6.9" y2="3.35" width="0.127" layer="51" curve="-90"/>
+<wire x1="6.9" y1="3.35" x2="6.9" y2="-3.35" width="0.127" layer="51"/>
+<wire x1="6.9" y1="-3.35" x2="3.9" y2="-6.35" width="0.127" layer="51" curve="-90"/>
+<wire x1="3.9" y1="-6.35" x2="-3.9" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="-3.9" y1="-6.35" x2="-6.9" y2="-3.35" width="0.127" layer="51" curve="-90"/>
+<wire x1="-6.9" y1="-3.35" x2="-6.9" y2="3.35" width="0.127" layer="51"/>
+<wire x1="-6.9" y1="3.35" x2="-3.9" y2="6.35" width="0.127" layer="51" curve="-90"/>
+<wire x1="-6.9" y1="3.4" x2="-3.95" y2="6.35" width="0.127" layer="21" curve="-90"/>
+<wire x1="-3.95" y1="6.35" x2="3.95" y2="6.35" width="0.127" layer="21"/>
+<wire x1="3.95" y1="6.35" x2="6.9" y2="3.4" width="0.127" layer="21" curve="-90"/>
+<wire x1="-6.9" y1="-3.4" x2="-3.95" y2="-6.35" width="0.127" layer="21" curve="90"/>
+<wire x1="-3.95" y1="-6.35" x2="3.95" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="3.95" y1="-6.35" x2="6.9" y2="-3.4" width="0.127" layer="21" curve="90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IND">
 <text x="-3.81" y="1.8796" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="-1.8796" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 <rectangle x1="-3.81" y1="-0.889" x2="3.81" y2="0.889" layer="94"/>
 <pin name="2" x="7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1"/>
+<text x="-3.81" y="-4.4196" size="1.778" layer="97" align="top-left">&gt;CURRENT</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1737,7 +1816,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-7X7X3MM" package="IND0703">
@@ -1746,7 +1827,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-12X12X7MM" package="IND1207">
@@ -1755,7 +1838,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-13X13X5MM" package="IND1305">
@@ -1764,7 +1849,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0805" package="IND0805">
@@ -1773,7 +1860,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-2.5X2X1.2MM" package="IND2520">
@@ -1782,7 +1871,53 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-6X6MM" package="IND0606">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-5X5MM" package="IND0505">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-3.2XX2.5MM" package="IND3225">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-13X13X6.5MM" package="IND1365">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2073,6 +2208,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <smd name="P$2" x="0" y="-1.375" dx="2.2" dy="0.85" layer="1"/>
 <smd name="P$3" x="1.525" y="0" dx="1.05" dy="1" layer="1"/>
 <smd name="P$4" x="-1.525" y="0" dx="1.05" dy="1" layer="1"/>
+<text x="3.81" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="SMA">
 <description>SMA DIP Connector 90° 50 Ohm</description>
@@ -2139,15 +2275,6 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <text x="-2.032" y="4.826" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.032" y="4.064" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SMA-EDGE">
-<description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
-This is a footprint for an edge mount RF antenna. Works pretty well with SMA type connectors but may also work with other edge mount RF connectors. Keep in mind, these edge mount connectors assume you are using a 0.062" PCB thickness.</description>
-<smd name="GND@0" x="0" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
-<smd name="SIG" x="2.54" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
-<smd name="GND@1" x="5.08" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
-<smd name="GND@2" x="0" y="0" dx="1.524" dy="4.064" layer="16"/>
-<smd name="GND@3" x="5.08" y="0" dx="1.524" dy="4.064" layer="16"/>
-</package>
 <package name="BNC">
 <pad name="SIGNAL" x="0" y="0" drill="0.9" diameter="1.778"/>
 <pad name="GND" x="-2.45" y="0" drill="0.9" diameter="1.778"/>
@@ -2183,6 +2310,16 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <smd name="SIGNAL" x="0" y="0" dx="1.5" dy="2.5" layer="1" cream="no"/>
 <smd name="GND@1" x="2" y="0.375" dx="1" dy="3.25" layer="1" cream="no"/>
 <pad name="FEED" x="0" y="0.5" drill="0.3" diameter="1.5" stop="no" thermals="no"/>
+</package>
+<package name="SMA-EDGE">
+<description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
+This is a footprint for an edge mount RF antenna. Works pretty well with SMA type connectors but may also work with other edge mount RF connectors. Keep in mind, these edge mount connectors assume you are using a 0.062" PCB thickness.</description>
+<smd name="GND@0" x="-2.54" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="SIG" x="0" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@1" x="2.54" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@2" x="-2.54" y="0" dx="1.524" dy="4.064" layer="16"/>
+<smd name="GND@3" x="2.54" y="0" dx="1.524" dy="4.064" layer="16"/>
+<text x="-3.81" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2569,8 +2706,8 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <wire x1="-15.24" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-15.24" y2="0" width="0.254" layer="94"/>
-<text x="-15.24" y="2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="-15.24" y="0.762" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-15.24" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2954,34 +3091,38 @@ Package for LCSC connector C319148</description>
 </packages>
 <symbols>
 <symbol name="PTC">
-<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0.889" x2="-2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.778" x2="-1.27" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-1.778" x2="-2.286" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="2.54" x2="3.302" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-1.0668" y1="2.1336" x2="-0.762" y2="2.159" width="0.1524" layer="94" curve="-143.401004"/>
-<wire x1="-0.762" y1="2.159" x2="-0.635" y2="1.651" width="0.1524" layer="94" curve="16.281888"/>
-<wire x1="-0.635" y1="1.651" x2="-0.0508" y2="1.5494" width="0.1524" layer="94" curve="135.668554"/>
-<wire x1="-0.0508" y1="1.5494" x2="-0.127" y2="2.921" width="0.1524" layer="94" curve="65.705733"/>
-<wire x1="-0.127" y1="2.921" x2="-0.381" y2="2.794" width="0.1524" layer="94" curve="139.383116"/>
-<wire x1="-0.381" y1="2.794" x2="0.381" y2="2.286" width="0.1524" layer="94" curve="100.176187"/>
-<text x="-3.81" y="3.81" size="1.27" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="6.096" y1="3.556" x2="6.096" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="6.858" y1="3.556" x2="6.858" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="3.5052" y1="2.8956" x2="3.81" y2="2.921" width="0.1524" layer="94" curve="-143.401004"/>
+<wire x1="3.81" y1="2.921" x2="3.937" y2="2.413" width="0.1524" layer="94" curve="16.281888"/>
+<wire x1="3.937" y1="2.413" x2="4.5212" y2="2.3114" width="0.1524" layer="94" curve="135.668554"/>
+<wire x1="4.5212" y1="2.3114" x2="4.445" y2="3.683" width="0.1524" layer="94" curve="65.705733"/>
+<wire x1="4.445" y1="3.683" x2="4.191" y2="3.556" width="0.1524" layer="94" curve="139.383116"/>
+<wire x1="4.191" y1="3.556" x2="4.953" y2="3.048" width="0.1524" layer="94" curve="100.176187"/>
+<text x="0" y="-4.064" size="1.778" layer="97" align="top-left">&gt;HOLD</text>
+<pin name="2" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1" x="12.7" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <polygon width="0.1524" layer="94">
-<vertex x="2.54" y="2.54"/>
-<vertex x="2.794" y="1.778"/>
-<vertex x="2.286" y="1.778"/>
+<vertex x="6.096" y="3.556"/>
+<vertex x="6.35" y="2.794"/>
+<vertex x="5.842" y="2.794"/>
 </polygon>
 <polygon width="0.1524" layer="94">
-<vertex x="3.302" y="2.54"/>
-<vertex x="3.556" y="1.778"/>
-<vertex x="3.048" y="1.778"/>
+<vertex x="6.858" y="3.556"/>
+<vertex x="7.112" y="2.794"/>
+<vertex x="6.604" y="2.794"/>
 </polygon>
+<text x="0" y="-6.604" size="1.778" layer="97" align="top-left">&gt;TRIP</text>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="-1.27" x2="5.715" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="6.985" y1="-1.27" x2="8.255" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="8.255" y1="1.27" x2="9.525" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.175" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="9.525" y1="-1.27" x2="10.16" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="4.8006" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="8.89" y2="2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2996,7 +3137,10 @@ Package for LCSC connector C319148</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1206" package="1206">
@@ -3005,7 +3149,10 @@ Package for LCSC connector C319148</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1812" package="1812">
@@ -3014,7 +3161,10 @@ Package for LCSC connector C319148</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0805" package="0805">
@@ -3023,7 +3173,10 @@ Package for LCSC connector C319148</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="2920" package="2920">
@@ -3032,7 +3185,10 @@ Package for LCSC connector C319148</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3045,7 +3201,6 @@ Package for LCSC connector C319148</description>
 <description>&lt;b&gt;DO-214AC (SMA) Surface Mount Diode&lt;/b&gt;</description>
 <smd name="C" x="-2" y="0" dx="2.5" dy="1.7" layer="1"/>
 <smd name="A" x="2" y="0" dx="2.5" dy="1.7" layer="1"/>
-<rectangle x1="-0.5" y1="-1" x2="0.5" y2="1" layer="35"/>
 <wire x1="-2.15" y1="-1.03" x2="-2.15" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-2.15" y1="-1.3" x2="2.15" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="2.15" y1="-1.3" x2="2.15" y2="-1.03" width="0.127" layer="21"/>
@@ -3064,15 +3219,15 @@ Package for LCSC connector C319148</description>
 </package>
 </packages>
 <symbols>
-<symbol name="ZD">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-1.778" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="TVS">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
@@ -3083,7 +3238,7 @@ Package for LCSC connector C319148</description>
 &lt;br&gt;
 Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smaj_datasheet.pdf.pdf"&gt;http://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smaj_datasheet.pdf.pdf&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="ZD" x="0" y="0"/>
+<gate name="G$1" symbol="TVS" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DO214AC">
@@ -3669,7 +3824,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="0" y1="-12.7" x2="-20.32" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-12.7" x2="-20.32" y2="0" width="0.254" layer="94"/>
-<text x="-20.32" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
@@ -8718,11 +8873,6 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="Frame" deviceset="A3-LANDSCAPE" device="">
-<attribute name="CNAME" value=""/>
-<attribute name="CREVISION" value=""/>
-<attribute name="DESIGNER" value=""/>
-</part>
 <part name="U2" library="Microchip" deviceset="MIC23155" device=""/>
 <part name="BAT1" library="Battery" deviceset="18650_CELL" device=""/>
 <part name="Q1" library="Alpha Omega" deviceset="AO3401" device=""/>
@@ -8771,11 +8921,6 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <part name="R18" library="Resistor" deviceset="RESISTOR" device="-0603" value="100K Ohms"/>
 <part name="GND37" library="Supply Symbol" deviceset="GND" device=""/>
 <part name="2V818" library="Supply Symbol" deviceset="2V8" device=""/>
-<part name="FRAME4" library="Frame" deviceset="A3-LANDSCAPE" device="">
-<attribute name="CNAME" value=""/>
-<attribute name="CREVISION" value=""/>
-<attribute name="DESIGNER" value=""/>
-</part>
 <part name="U8" library="Silicon Labs" deviceset="SI7021" device=""/>
 <part name="VIN1" library="Supply Symbol" deviceset="VIN" device=""/>
 <part name="5V03" library="Supply Symbol" deviceset="5V0" device=""/>
@@ -8801,7 +8946,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <part name="GND6" library="Supply Symbol" deviceset="GND" device=""/>
 <part name="GND10" library="Supply Symbol" deviceset="GND" device=""/>
 <part name="GND1" library="Supply Symbol" deviceset="GND" device=""/>
-<part name="F1" library="PTC Fuses" deviceset="PTC" device="1206" value="1A Hold"/>
+<part name="F1" library="PTC Fuses" deviceset="PTC" device="1206" value="1A Hold">
+<attribute name="HOLD" value="1A"/>
+</part>
 <part name="D1" library="TVS" deviceset="SMAJ*A" device="" technology="5.0"/>
 <part name="GND8" library="Supply Symbol" deviceset="GND" device=""/>
 <part name="CON1" library="JST" deviceset="3P" device="-SH-SIDE"/>
@@ -8894,6 +9041,8 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <part name="GND50" library="Supply Symbol" deviceset="GND" device=""/>
 <part name="LOGO1" library="Silkscreen" deviceset="GECKO" device="-14MM"/>
 <part name="LOGO2" library="Silkscreen" deviceset="OSHW-LOGO" device="M"/>
+<part name="FRAME1" library="Frame" deviceset="A3-LANDSCAPE" device=""/>
+<part name="FRAME4" library="Frame" deviceset="A3-LANDSCAPE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8906,14 +9055,6 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <text x="353.06" y="68.58" size="1.778" layer="94">Decouple</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="292.1" y="15.494" size="2.54" layer="94" font="vector"/>
-<attribute name="LAST_DATE_TIME" x="292.1" y="10.414" size="2.286" layer="94" font="vector"/>
-<attribute name="SHEET" x="306.07" y="5.334" size="2.54" layer="94" font="vector"/>
-<attribute name="CREVISION" x="345.41" y="5.234" size="2.54" layer="94" font="vector"/>
-<attribute name="DESIGNER" x="336.75" y="10.414" size="2.54" layer="94" font="vector"/>
-<attribute name="CNAME" x="292.1" y="20.574" size="2.54" layer="94" font="vector"/>
-</instance>
 <instance part="U2" gate="G$1" x="284.48" y="210.82" smashed="yes">
 <attribute name="NAME" x="264.16" y="214.376" size="1.27" layer="95"/>
 <attribute name="VALUE" x="264.16" y="212.09" size="1.27" layer="96"/>
@@ -8931,8 +9072,8 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="81.28" y="138.43" size="1.27" layer="96"/>
 </instance>
 <instance part="D2" gate="G$1" x="124.46" y="66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="126.365" y="68.326" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="121.031" y="68.326" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="127" y="68.58" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="121.92" y="68.58" size="1.778" layer="96" rot="R270" align="top-left"/>
 </instance>
 <instance part="VIN1" gate="G$1" x="154.94" y="78.74" smashed="yes">
 <attribute name="VALUE" x="152.4" y="76.2" size="1.778" layer="96" rot="R90"/>
@@ -8947,8 +9088,8 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="93.98" y="76.2" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U3" gate="G$1" x="297.18" y="81.28" smashed="yes">
-<attribute name="NAME" x="281.94" y="83.82" size="1.27" layer="95"/>
-<attribute name="VALUE" x="281.94" y="82.042" size="1.27" layer="96"/>
+<attribute name="NAME" x="281.94" y="84.836" size="1.27" layer="95"/>
+<attribute name="VALUE" x="281.94" y="82.55" size="1.27" layer="96"/>
 </instance>
 <instance part="GND20" gate="G$1" x="320.04" y="53.34" smashed="yes">
 <attribute name="VALUE" x="317.246" y="48.26" size="1.778" layer="96"/>
@@ -8957,19 +9098,22 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="259.08" y="86.36" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R12" gate="G$1" x="340.36" y="78.74" smashed="yes" rot="R270">
-<attribute name="VALUE" x="336.7024" y="78.0542" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="343.1286" y="77.7494" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="337.5914" y="78.74" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="343.1286" y="78.74" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="335.0514" y="78.74" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="R8" gate="G$1" x="264.16" y="78.74" smashed="yes">
-<attribute name="VALUE" x="264.8458" y="75.0824" size="1.778" layer="96" ratio="10" rot="SR0"/>
-<attribute name="NAME" x="265.1506" y="81.5086" size="1.778" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="264.16" y="75.9714" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="264.16" y="81.5086" size="1.778" layer="95" ratio="10" rot="SR0"/>
+<attribute name="TOLERANCE" x="264.16" y="73.4314" size="1.778" layer="97" ratio="10" rot="SR0" align="top-left"/>
 </instance>
 <instance part="GND19" gate="G$1" x="254" y="53.34" smashed="yes">
 <attribute name="VALUE" x="251.206" y="48.26" size="1.778" layer="96"/>
 </instance>
 <instance part="C11" gate="G$1" x="358.14" y="93.98" smashed="yes" rot="R270">
-<attribute name="VALUE" x="353.8728" y="94.5642" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="360.9086" y="94.8944" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="355.3714" y="93.98" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="360.9086" y="93.98" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="352.8314" y="93.98" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="VBAT5" gate="G$1" x="358.14" y="99.06" smashed="yes">
 <attribute name="VALUE" x="355.6" y="96.52" size="1.778" layer="96" rot="R90"/>
@@ -8982,16 +9126,19 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="NAME" x="18.796" y="203.2" size="1.27" layer="95" rot="R90"/>
 </instance>
 <instance part="C2" gate="G$1" x="91.44" y="210.82" smashed="yes" rot="R270">
-<attribute name="VALUE" x="87.1728" y="211.4042" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="94.2086" y="211.7344" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="88.6714" y="210.82" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="94.2086" y="210.82" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="86.1314" y="210.82" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="R1" gate="G$1" x="50.8" y="210.82" smashed="yes" rot="R270">
-<attribute name="VALUE" x="47.1424" y="210.1342" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="53.5686" y="209.8294" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="48.0314" y="210.82" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="53.5686" y="210.82" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="45.4914" y="210.82" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="R3" gate="G$1" x="63.5" y="210.82" smashed="yes" rot="R270">
-<attribute name="VALUE" x="59.8424" y="210.1342" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="66.2686" y="209.8294" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="60.7314" y="210.82" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="66.2686" y="210.82" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="58.1914" y="210.82" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="5V02" gate="G$1" x="91.44" y="238.76" smashed="yes">
 <attribute name="VALUE" x="88.9" y="236.22" size="1.778" layer="96" rot="R90"/>
@@ -9015,19 +9162,21 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="33.274" y="243.84" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="F1" gate="G$1" x="55.88" y="223.52" smashed="yes">
-<attribute name="NAME" x="52.07" y="227.33" size="1.27" layer="95"/>
-<attribute name="VALUE" x="52.07" y="219.71" size="1.27" layer="96"/>
+<attribute name="HOLD" x="55.88" y="219.456" size="1.778" layer="97" align="top-left"/>
+<attribute name="TRIP" x="55.88" y="216.916" size="1.778" layer="97" align="top-left"/>
+<attribute name="NAME" x="55.88" y="228.3206" size="1.778" layer="95" ratio="10" rot="SR0"/>
 </instance>
 <instance part="D1" gate="G$1" x="76.2" y="208.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="74.295" y="206.502" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="79.629" y="206.502" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="73.66" y="205.74" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="78.74" y="205.74" size="1.778" layer="96" rot="R90" align="top-left"/>
 </instance>
 <instance part="GND8" gate="G$1" x="76.2" y="190.5" smashed="yes">
 <attribute name="VALUE" x="73.406" y="185.42" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="116.84" y="142.24" smashed="yes" rot="R270">
-<attribute name="VALUE" x="113.1824" y="141.5542" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="119.6086" y="141.2494" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="114.0714" y="142.24" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="119.6086" y="142.24" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="111.5314" y="142.24" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="VBAT2" gate="G$1" x="106.68" y="147.32" smashed="yes">
 <attribute name="VALUE" x="104.14" y="144.78" size="1.778" layer="96" rot="R90"/>
@@ -9045,15 +9194,17 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="58.166" y="106.68" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="60.96" y="127" smashed="yes" rot="R270">
-<attribute name="VALUE" x="57.3024" y="126.3142" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="63.7286" y="126.0094" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="58.1914" y="127" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="63.7286" y="127" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="55.6514" y="127" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND11" gate="G$1" x="96.52" y="35.56" smashed="yes">
 <attribute name="VALUE" x="93.726" y="30.48" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="96.52" y="48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="92.2528" y="48.8442" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="99.2886" y="49.1744" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="93.7514" y="48.26" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="99.2886" y="48.26" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="91.2114" y="48.26" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND12" gate="G$1" x="124.46" y="35.56" smashed="yes">
 <attribute name="VALUE" x="121.666" y="30.48" size="1.778" layer="96"/>
@@ -9062,51 +9213,61 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="152.146" y="30.48" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="124.46" y="48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="120.1928" y="48.8442" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="127.2286" y="49.1744" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="121.6914" y="48.26" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="127.2286" y="48.26" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="119.1514" y="48.26" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="C7" gate="G$1" x="154.94" y="48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="150.6728" y="48.8442" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="157.7086" y="49.1744" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="152.1714" y="48.26" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="157.7086" y="48.26" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="149.6314" y="48.26" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND13" gate="G$1" x="139.7" y="35.56" smashed="yes">
 <attribute name="VALUE" x="136.906" y="30.48" size="1.778" layer="96"/>
 </instance>
 <instance part="C5" gate="G$1" x="139.7" y="48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="135.4328" y="48.8442" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="142.4686" y="49.1744" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="136.9314" y="48.26" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="142.4686" y="48.26" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="134.3914" y="48.26" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND9" gate="G$1" x="83.82" y="35.56" smashed="yes">
 <attribute name="VALUE" x="81.026" y="30.48" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="83.82" y="48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="79.5528" y="48.8442" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="86.5886" y="49.1744" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="81.0514" y="48.26" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="86.5886" y="48.26" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="78.5114" y="48.26" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="R7" gate="G$1" x="254" y="71.12" smashed="yes" rot="R270">
-<attribute name="VALUE" x="250.3424" y="70.4342" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="256.7686" y="70.1294" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="251.2314" y="71.12" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="256.7686" y="71.12" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="248.6914" y="71.12" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="L1" gate="G$1" x="307.34" y="208.28" smashed="yes">
-<attribute name="NAME" x="303.53" y="210.1596" size="1.778" layer="95"/>
-<attribute name="VALUE" x="303.53" y="204.597" size="1.778" layer="96"/>
 <attribute name="OCLCSC" x="307.34" y="208.28" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="303.53" y="210.1596" size="1.778" layer="95"/>
+<attribute name="VALUE" x="303.53" y="206.4004" size="1.778" layer="96" align="top-left"/>
+<attribute name="CURRENT" x="303.53" y="203.8604" size="1.778" layer="97" align="top-left"/>
 </instance>
 <instance part="C10" gate="G$1" x="355.6" y="198.12" smashed="yes" rot="R270">
-<attribute name="VALUE" x="351.3328" y="198.7042" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="358.3686" y="199.0344" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="352.8314" y="198.12" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="358.3686" y="198.12" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="350.2914" y="198.12" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="C9" gate="G$1" x="342.9" y="198.12" smashed="yes" rot="R270">
-<attribute name="VALUE" x="338.6328" y="198.7042" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="345.6686" y="199.0344" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="340.1314" y="198.12" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="345.6686" y="198.12" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="337.5914" y="198.12" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="R10" gate="G$1" x="330.2" y="203.2" smashed="yes" rot="R270">
-<attribute name="VALUE" x="326.5424" y="202.5142" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="332.9686" y="202.2094" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="327.4314" y="203.2" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="332.9686" y="203.2" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="324.8914" y="203.2" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="R11" gate="G$1" x="330.2" y="185.42" smashed="yes" rot="R270">
-<attribute name="VALUE" x="326.5424" y="184.7342" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="332.9686" y="184.4294" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="327.4314" y="185.42" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="332.9686" y="185.42" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="324.8914" y="185.42" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND21" gate="G$1" x="330.2" y="167.64" smashed="yes">
 <attribute name="VALUE" x="327.406" y="162.56" size="1.778" layer="96"/>
@@ -9118,8 +9279,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="352.806" y="162.56" size="1.778" layer="96"/>
 </instance>
 <instance part="C8" gate="G$1" x="243.84" y="180.34" smashed="yes" rot="R270">
-<attribute name="VALUE" x="239.5728" y="180.9242" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="246.6086" y="181.2544" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="241.0714" y="180.34" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="246.6086" y="180.34" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="238.5314" y="180.34" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND18" gate="G$1" x="254" y="167.64" smashed="yes">
 <attribute name="VALUE" x="251.206" y="162.56" size="1.778" layer="96"/>
@@ -9134,8 +9296,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="353.06" y="231.14" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R9" gate="G$1" x="294.64" y="226.06" smashed="yes" rot="R270">
-<attribute name="VALUE" x="290.9824" y="225.3742" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="297.4086" y="225.0694" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="291.8714" y="226.06" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="297.4086" y="226.06" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="289.3314" y="226.06" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V82" gate="G$1" x="294.64" y="233.68" smashed="yes">
 <attribute name="VALUE" x="292.1" y="231.14" size="1.778" layer="96" rot="R90"/>
@@ -9147,22 +9310,33 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="162.306" y="190.5" size="1.778" layer="96"/>
 </instance>
 <instance part="R5" gate="G$1" x="165.1" y="231.14" smashed="yes" rot="R270">
-<attribute name="VALUE" x="161.4424" y="230.4542" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="167.8686" y="230.1494" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="162.3314" y="231.14" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="167.8686" y="231.14" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="159.7914" y="231.14" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="R6" gate="G$1" x="165.1" y="213.36" smashed="yes" rot="R270">
-<attribute name="VALUE" x="161.4424" y="212.6742" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="167.8686" y="212.3694" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="162.3314" y="213.36" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="167.8686" y="213.36" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="159.7914" y="213.36" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="C6" gate="G$1" x="152.4" y="210.82" smashed="yes" rot="R270">
-<attribute name="VALUE" x="148.1328" y="211.4042" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="155.1686" y="211.7344" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="149.6314" y="210.82" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="155.1686" y="210.82" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="147.0914" y="210.82" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND14" gate="G$1" x="152.4" y="195.58" smashed="yes">
 <attribute name="VALUE" x="149.606" y="190.5" size="1.778" layer="96"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="368.3" y="27.94" smashed="yes"/>
 <instance part="LOGO2" gate="G$1" x="271.78" y="17.78" smashed="yes"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="292.1" y="15.494" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="292.1" y="10.414" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="306.07" y="5.334" size="2.54" layer="94" font="vector"/>
+<attribute name="CNAME" x="292.1" y="20.574" size="2.54" layer="94" font="vector"/>
+<attribute name="DESIGNER" x="336.75" y="10.414" size="2.54" layer="94" font="vector"/>
+<attribute name="CREVISION" x="345.41" y="5.234" size="2.54" layer="94" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9223,7 +9397,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <wire x1="91.44" y1="238.76" x2="91.44" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="223.52" x2="91.44" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="223.52" x2="76.2" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="223.52" x2="76.2" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="76.2" y1="210.82" x2="76.2" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="223.52" x2="91.44" y2="223.52" width="0.1524" layer="91"/>
@@ -9483,7 +9657,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <segment>
 <pinref part="USB1" gate="G$1" pin="VBUS"/>
 <pinref part="F1" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="223.52" x2="50.8" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="223.52" x2="55.88" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -9621,14 +9795,15 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="175.006" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="R13" gate="G$1" x="17.78" y="198.12" smashed="yes" rot="R270">
-<attribute name="VALUE" x="14.1224" y="197.4342" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="20.5486" y="197.1294" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="15.0114" y="198.12" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="20.5486" y="198.12" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="12.4714" y="198.12" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V85" gate="G$1" x="17.78" y="203.2" smashed="yes">
 <attribute name="VALUE" x="15.24" y="200.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U5" gate="G$1" x="165.1" y="215.9" smashed="yes">
-<attribute name="NAME" x="132.08" y="220.726" size="1.27" layer="95" align="top-left"/>
+<attribute name="NAME" x="132.08" y="219.456" size="1.27" layer="95"/>
 <attribute name="VALUE" x="132.08" y="217.17" size="1.27" layer="96"/>
 </instance>
 <instance part="S1" gate="S" x="320.04" y="215.9" smashed="yes">
@@ -9667,9 +9842,10 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="337.566" y="116.84" size="1.778" layer="96"/>
 </instance>
 <instance part="L2" gate="G$1" x="99.06" y="66.04" smashed="yes">
-<attribute name="NAME" x="95.25" y="67.9196" size="1.778" layer="95"/>
-<attribute name="VALUE" x="95.25" y="62.357" size="1.778" layer="96"/>
 <attribute name="OCLCSC" x="99.06" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="95.25" y="67.9196" size="1.778" layer="95"/>
+<attribute name="VALUE" x="95.25" y="64.1604" size="1.778" layer="96" align="top-left"/>
+<attribute name="CURRENT" x="95.25" y="61.6204" size="1.778" layer="97" align="top-left"/>
 </instance>
 <instance part="1V81" gate="G$1" x="86.36" y="71.12" smashed="yes">
 <attribute name="VALUE" x="83.82" y="68.58" size="1.778" layer="96" rot="R90"/>
@@ -9678,8 +9854,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="195.326" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="C16" gate="G$1" x="187.96" y="48.26" smashed="yes" rot="R90">
-<attribute name="VALUE" x="192.2272" y="47.6758" size="1.778" layer="96" ratio="10" rot="SR90"/>
-<attribute name="NAME" x="185.1914" y="47.3456" size="1.778" layer="95" ratio="10" rot="SR90"/>
+<attribute name="VALUE" x="190.7286" y="48.26" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
+<attribute name="NAME" x="185.1914" y="48.26" size="1.778" layer="95" ratio="10" rot="SR90"/>
+<attribute name="VOLTAGE" x="193.2686" y="48.26" size="1.778" layer="97" ratio="10" rot="SR90" align="top-left"/>
 </instance>
 <instance part="GND29" gate="G$1" x="187.96" y="43.18" smashed="yes">
 <attribute name="VALUE" x="185.166" y="38.1" size="1.778" layer="96"/>
@@ -9688,15 +9865,17 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="121.92" y="53.34" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C15" gate="G$1" x="86.36" y="58.42" smashed="yes" rot="R270">
-<attribute name="VALUE" x="82.0928" y="59.0042" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="89.1286" y="59.3344" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="83.5914" y="58.42" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="89.1286" y="58.42" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="81.0514" y="58.42" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND27" gate="G$1" x="86.36" y="43.18" smashed="yes">
 <attribute name="VALUE" x="83.566" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="C12" gate="G$1" x="17.78" y="241.3" smashed="yes" rot="R270">
-<attribute name="VALUE" x="13.5128" y="241.8842" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="20.5486" y="242.2144" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="15.0114" y="241.3" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="20.5486" y="241.3" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="12.4714" y="241.3" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V84" gate="G$1" x="17.78" y="246.38" smashed="yes">
 <attribute name="VALUE" x="15.24" y="243.84" size="1.778" layer="96" rot="R90"/>
@@ -9705,8 +9884,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="14.986" y="223.52" size="1.778" layer="96"/>
 </instance>
 <instance part="C13" gate="G$1" x="30.48" y="241.3" smashed="yes" rot="R270">
-<attribute name="VALUE" x="26.2128" y="241.8842" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="33.2486" y="242.2144" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="27.7114" y="241.3" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="33.2486" y="241.3" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="25.1714" y="241.3" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V86" gate="G$1" x="30.48" y="246.38" smashed="yes">
 <attribute name="VALUE" x="27.94" y="243.84" size="1.778" layer="96" rot="R90"/>
@@ -9715,8 +9895,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="27.686" y="223.52" size="1.778" layer="96"/>
 </instance>
 <instance part="C14" gate="G$1" x="43.18" y="241.3" smashed="yes" rot="R270">
-<attribute name="VALUE" x="38.9128" y="241.8842" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="45.9486" y="242.2144" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="40.4114" y="241.3" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="45.9486" y="241.3" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="37.8714" y="241.3" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V88" gate="G$1" x="43.18" y="246.38" smashed="yes">
 <attribute name="VALUE" x="40.64" y="243.84" size="1.778" layer="96" rot="R90"/>
@@ -9729,8 +9910,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="297.18" y="67.31" size="1.27" layer="96"/>
 </instance>
 <instance part="C17" gate="G$1" x="233.68" y="68.58" smashed="yes" rot="R270">
-<attribute name="VALUE" x="229.4128" y="69.1642" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="236.4486" y="69.4944" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="230.9114" y="68.58" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="236.4486" y="68.58" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="228.3714" y="68.58" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V812" gate="G$1" x="233.68" y="83.82" smashed="yes">
 <attribute name="VALUE" x="231.14" y="81.28" size="1.778" layer="96" rot="R90"/>
@@ -9745,22 +9927,25 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="287.02" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R16" gate="G$1" x="281.94" y="78.74" smashed="yes" rot="R270">
-<attribute name="VALUE" x="278.2824" y="78.0542" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="284.7086" y="77.7494" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="279.1714" y="78.74" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="284.7086" y="78.74" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="276.6314" y="78.74" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V813" gate="G$1" x="281.94" y="83.82" smashed="yes">
 <attribute name="VALUE" x="279.4" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R14" gate="G$1" x="35.56" y="198.12" smashed="yes" rot="R270">
-<attribute name="VALUE" x="31.9024" y="197.4342" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="38.3286" y="197.1294" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="32.7914" y="198.12" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="38.3286" y="198.12" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="30.2514" y="198.12" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V87" gate="G$1" x="35.56" y="203.2" smashed="yes">
 <attribute name="VALUE" x="33.02" y="200.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R15" gate="G$1" x="45.72" y="198.12" smashed="yes" rot="R270">
-<attribute name="VALUE" x="42.0624" y="197.4342" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="48.4886" y="197.1294" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="42.9514" y="198.12" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="48.4886" y="198.12" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="40.4114" y="198.12" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V89" gate="G$1" x="45.72" y="203.2" smashed="yes">
 <attribute name="VALUE" x="43.18" y="200.66" size="1.778" layer="96" rot="R90"/>
@@ -9769,8 +9954,8 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="327.66" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="X1" gate="G$1" x="182.88" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="185.42" y="94.996" size="1.778" layer="95"/>
-<attribute name="VALUE" x="185.42" y="91.44" size="1.778" layer="96"/>
+<attribute name="NAME" x="181.864" y="91.44" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="185.42" y="91.44" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND30" gate="G$1" x="190.5" y="78.74" smashed="yes">
 <attribute name="VALUE" x="187.706" y="73.66" size="1.778" layer="96"/>
@@ -10226,8 +10411,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="169.926" y="106.68" size="1.778" layer="96"/>
 </instance>
 <instance part="C18" gate="G$1" x="26.67" y="228.6" smashed="yes" rot="R90">
-<attribute name="VALUE" x="30.9372" y="228.0158" size="1.778" layer="96" ratio="10" rot="SR90"/>
-<attribute name="NAME" x="23.9014" y="227.6856" size="1.778" layer="95" ratio="10" rot="SR90"/>
+<attribute name="VALUE" x="29.4386" y="228.6" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
+<attribute name="NAME" x="23.9014" y="228.6" size="1.778" layer="95" ratio="10" rot="SR90"/>
+<attribute name="VOLTAGE" x="31.9786" y="228.6" size="1.778" layer="97" ratio="10" rot="SR90" align="top-left"/>
 </instance>
 <instance part="GND36" gate="G$1" x="26.67" y="223.52" smashed="yes">
 <attribute name="VALUE" x="23.876" y="218.44" size="1.778" layer="96"/>
@@ -10246,12 +10432,14 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="24.13" y="238.76" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R17" gate="G$1" x="157.48" y="129.54" smashed="yes" rot="R270">
-<attribute name="VALUE" x="153.8224" y="128.8542" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="160.2486" y="128.5494" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="154.7114" y="129.54" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="160.2486" y="129.54" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="152.1714" y="129.54" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="R18" gate="G$1" x="162.56" y="167.64" smashed="yes" rot="R270">
-<attribute name="VALUE" x="158.9024" y="166.9542" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="165.3286" y="166.6494" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="159.7914" y="167.64" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="165.3286" y="167.64" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="157.2514" y="167.64" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND37" gate="G$1" x="157.48" y="111.76" smashed="yes">
 <attribute name="VALUE" x="154.686" y="106.68" size="1.778" layer="96"/>
@@ -10368,14 +10556,6 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <plain>
 </plain>
 <instances>
-<instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="292.1" y="15.494" size="2.54" layer="94" font="vector"/>
-<attribute name="LAST_DATE_TIME" x="292.1" y="10.414" size="2.286" layer="94" font="vector"/>
-<attribute name="SHEET" x="306.07" y="5.334" size="2.54" layer="94" font="vector"/>
-<attribute name="CREVISION" x="345.41" y="5.234" size="2.54" layer="94" font="vector"/>
-<attribute name="DESIGNER" x="336.75" y="10.414" size="2.54" layer="94" font="vector"/>
-<attribute name="CNAME" x="292.1" y="20.574" size="2.54" layer="94" font="vector"/>
-</instance>
 <instance part="U8" gate="G$1" x="66.04" y="228.6" smashed="yes">
 <attribute name="NAME" x="48.26" y="232.156" size="1.27" layer="95"/>
 <attribute name="VALUE" x="48.26" y="229.87" size="1.27" layer="96"/>
@@ -10413,8 +10593,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="22.606" y="99.06" size="1.778" layer="96"/>
 </instance>
 <instance part="C20" gate="G$1" x="25.4" y="228.6" smashed="yes" rot="R270">
-<attribute name="VALUE" x="21.1328" y="229.1842" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="28.1686" y="229.5144" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="22.6314" y="228.6" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="28.1686" y="228.6" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="20.0914" y="228.6" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V821" gate="G$1" x="25.4" y="236.22" smashed="yes">
 <attribute name="VALUE" x="22.86" y="233.68" size="1.778" layer="96" rot="R90"/>
@@ -10427,12 +10608,13 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="66.04" y="62.23" size="1.27" layer="96"/>
 </instance>
 <instance part="D3" gate="G$1" x="193.04" y="60.96" smashed="yes">
-<attribute name="NAME" x="172.72" y="65.786" size="1.27" layer="95" align="top-left"/>
+<attribute name="NAME" x="172.72" y="64.516" size="1.27" layer="95"/>
 <attribute name="VALUE" x="172.72" y="62.23" size="1.27" layer="96"/>
 </instance>
 <instance part="C19" gate="G$1" x="25.4" y="53.34" smashed="yes" rot="R270">
-<attribute name="VALUE" x="21.1328" y="53.9242" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="28.1686" y="54.2544" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="22.6314" y="53.34" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="28.1686" y="53.34" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="20.0914" y="53.34" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V820" gate="G$1" x="25.4" y="68.58" smashed="yes">
 <attribute name="VALUE" x="22.86" y="66.04" size="1.778" layer="96" rot="R90"/>
@@ -10447,8 +10629,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="53.086" y="27.94" size="1.778" layer="96"/>
 </instance>
 <instance part="R19" gate="G$1" x="48.26" y="48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="44.6024" y="47.5742" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="51.0286" y="47.2694" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="45.4914" y="48.26" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="51.0286" y="48.26" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="42.9514" y="48.26" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND44" gate="G$1" x="48.26" y="33.02" smashed="yes">
 <attribute name="VALUE" x="45.466" y="27.94" size="1.778" layer="96"/>
@@ -10457,8 +10640,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="200.406" y="27.94" size="1.778" layer="96"/>
 </instance>
 <instance part="C22" gate="G$1" x="109.22" y="48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="104.9528" y="48.8442" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="111.9886" y="49.1744" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="106.4514" y="48.26" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="111.9886" y="48.26" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="103.9114" y="48.26" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND49" gate="G$1" x="109.22" y="33.02" smashed="yes">
 <attribute name="VALUE" x="106.426" y="27.94" size="1.778" layer="96"/>
@@ -10468,8 +10652,9 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="78.74" y="133.35" size="1.27" layer="96"/>
 </instance>
 <instance part="C21" gate="G$1" x="38.1" y="124.46" smashed="yes" rot="R270">
-<attribute name="VALUE" x="33.8328" y="125.0442" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="40.8686" y="125.3744" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="35.3314" y="124.46" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="40.8686" y="124.46" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="32.7914" y="124.46" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="2V825" gate="G$1" x="38.1" y="139.7" smashed="yes">
 <attribute name="VALUE" x="35.56" y="137.16" size="1.778" layer="96" rot="R90"/>
@@ -10484,18 +10669,28 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <attribute name="VALUE" x="65.786" y="99.06" size="1.778" layer="96"/>
 </instance>
 <instance part="R20" gate="G$1" x="60.96" y="119.38" smashed="yes" rot="R270">
-<attribute name="VALUE" x="57.3024" y="118.6942" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="63.7286" y="118.3894" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="58.1914" y="119.38" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="63.7286" y="119.38" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="TOLERANCE" x="55.6514" y="119.38" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND47" gate="G$1" x="60.96" y="104.14" smashed="yes">
 <attribute name="VALUE" x="58.166" y="99.06" size="1.778" layer="96"/>
 </instance>
 <instance part="C23" gate="G$1" x="121.92" y="119.38" smashed="yes" rot="R270">
-<attribute name="VALUE" x="117.6528" y="119.9642" size="1.778" layer="96" ratio="10" rot="SR270"/>
-<attribute name="NAME" x="124.6886" y="120.2944" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="119.1514" y="119.38" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="124.6886" y="119.38" size="1.778" layer="95" ratio="10" rot="SR270"/>
+<attribute name="VOLTAGE" x="116.6114" y="119.38" size="1.778" layer="97" ratio="10" rot="SR270" align="top-left"/>
 </instance>
 <instance part="GND50" gate="G$1" x="121.92" y="104.14" smashed="yes">
 <attribute name="VALUE" x="119.126" y="99.06" size="1.778" layer="96"/>
+</instance>
+<instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="292.1" y="15.494" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="292.1" y="10.414" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="306.07" y="5.334" size="2.54" layer="94" font="vector"/>
+<attribute name="CNAME" x="292.1" y="20.574" size="2.54" layer="94" font="vector"/>
+<attribute name="DESIGNER" x="336.75" y="10.414" size="2.54" layer="94" font="vector"/>
+<attribute name="CREVISION" x="345.41" y="5.234" size="2.54" layer="94" font="vector"/>
 </instance>
 </instances>
 <busses>
